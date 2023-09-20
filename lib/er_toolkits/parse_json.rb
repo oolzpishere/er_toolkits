@@ -1,3 +1,4 @@
+require 'json'
 
 module ErToolkits
   class ParseJson
@@ -8,6 +9,13 @@ module ErToolkits
       else
         json
       end
+    end
+
+    def self.test_sleep
+      10.times.each_with_index do |i|
+        sleep 1
+        puts i
+      end 
     end
 
     private
